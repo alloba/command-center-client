@@ -1,0 +1,22 @@
+{
+  "commandList" : [
+    {
+      "name":"testCommand",
+      "description":"",
+      "exec":"echo works",
+      "type":"powershell.exe"
+    },
+    {
+      "name":"secondTestCommand",
+      "description":"",
+      "exec":"echo test",
+      "type":"powershell.exe"
+    },
+    {
+      "name":"launchChrome",
+      "description":"launches new instance of Chrome",
+      "exec":"chrome",
+      "type":"powershell.exe"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<h2>Commands File Location</h2>
+<p th:text="${commandsFileLocation}">loc</p>
+
+
+<h2>Current Server Address</h2>
+<p th:text="${serverAddress}">loc</p>
+
+<h2>Current Client Ip (check for adapter issues)</h2>
+<p th:text="${clientAddress}">loc</p>
+
+<h2>Endpoints</h2>
+<ul>
+    <li>"execute/{commandName}"</li>
+    <li>
+        <a th:href="'http://'+${clientAddress}+':'+${port}+'/client/commandList'"
+           th:text="'commandList'"></a>
+    </li>
+    <li>"registerWithServer/{serverLocation}",</li>
+    <li>
+        <a th:href="'http://'+${clientAddress}+':'+${port}+'/client/getRefreshCommandList'"
+           th:text="'getRefreshCommandList'"></a>
+    </li>
+
+
+</ul>
+</html>
